@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMAC Signature Generator — Glassmorphism Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-row">
+                <span class="logo-emoji">✍</span>
+                <div class="title-col">
+                    <h1>HMAC Signature Generator</h1>
+                    <p class="tagline">HMAC hash validation console aligning secret codes with input payloads.</p>
+                </div>
+            </div>
+            <div class="badge">security</div>
+        </header>
+
+        <main class="workspace-card">
+            
+            <textarea id="hmac-msg" placeholder="Message to sign..."></textarea>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0;">
+                <input type="text" id="hmac-key" value="secret_hash_key" placeholder="HMAC Secret Key">
+                <button class="btn" onclick="genHmac()">Generate HMAC-SHA256</button>
+            </div>
+            <input type="text" id="hmac-out" readonly placeholder="Output signature digest..." style="width: 100%;">
+        
+        </main>
+        
+        <footer class="app-footer">
+            <p>Created as a premium portfolio piece by <a href="https://github.com/VARSHAN69" target="_blank">@VARSHAN69</a></p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
