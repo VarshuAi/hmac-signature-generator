@@ -38,7 +38,7 @@ version: 1.0
 type: Repository
 author: VarshuAi
 description: >
-  HMAC hash validation console aligning secret codes with input payloads.
+  name: hmac-signature-generator version: 1.0 type: Repository author: VarshuAi description: >   HMAC hash validation console aligning secret codes with input payloads. primary_tech: CSS
 primary_tech: CSS
 ```
 
